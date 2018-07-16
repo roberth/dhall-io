@@ -7,6 +7,8 @@ This proof of concept introduces IO into Dhall, because an effectful program is 
 
 Initially I wanted to add a looping construct like a Y combinator, but that made me feel bad for defeating (almost) the entire purpose of Dhall :).
 
+[**Example Dhall IO Program**](./example.dhall)
+
 # Implementation notes
 
 In a nutshell, this uses the Dhall library to read and check a Dhall function that takes the `IO` type and a record of library functions as an argument, so a program starts like this:
